@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOMEPAGE</title>
+</head>
+<body>
+<p>Welcome to recipes page:</p>
+{% for key,value in dishes_links.items %}
+<a href="{{ value }}">{{ key }}</a>
+<br>
+{% endfor %}
+</body>
+</html>
